@@ -7,7 +7,7 @@ class Array
     elsif self.at(1) == pawn_pos.at(1)
       true
       # move horizontally
-    elsif self.at(0) - pawn_pos.at(0) == self.at(1) - pawn_pos.at(1)
+    elsif (self.at(0) - pawn_pos.at(0)).abs == (self.at(1) - pawn_pos.at(1)).abs
       true
       #false
     else
